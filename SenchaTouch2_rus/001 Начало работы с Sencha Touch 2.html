@@ -1,0 +1,76 @@
+<h1>Начало работы с Sencha Touch2</h1>
+<div>
+<a href="http://docs.sencha.com/touch/2-0/#!/guide/getting_started">оригинал здесь</a>
+</div>
+
+<div>
+    <h2>Что такое Sencha Touch?</h2>
+    Sencha Touch позволяет быстро и легко создавать мобильные прилложения на  основе HTML5, ко
+    торые работают на Android, iOS и Blackberry устройствах, а также натиыне приложения для браузера.
+</div>
+
+<div>
+    <h2>Что вам потребуется</h2>
+    Для начала нужно скачать  <a href="http://www.sencha.com/products/touch/download/">Sencha Touch 2 SDK</a> 
+    и <a href="http://www.sencha.com/products/sdk-tools/download">SDK Tools</a> с сайта Сенчи.<br />
+    Также потребуются: 
+    <ul>
+        <li>Локальный WEB-сервер</li>
+        <li>Современный браузер; рекомендуются Chrome или Safari</li>
+    </ul>
+    Если в качестве web-сервера вы используете IIS под Windows, обратите внимание, что нужно дообавть Mime-тип
+    <i>application/x-json</i>. Как это сделать найдете здесь: http://stackoverflow.com/a/1121114/273985
+</div>    
+
+
+<h2>Установка</h2>
+<div>    
+    Для начала распокуйте архив с SDK в папку с вашим проектом. В идеале, эта папка должна быть доступна 
+    вашему HTTP-сервер. Например, через браузер вы должны зайти на адрес http://localhost/sencha-touch-2.0.0-gpl
+    и увидеть документацию Сенчи
+</div>    
+<div>
+    Также нужно запустить установщик SDK Tools. Установщик SDK Tools добавит поддержку коммандной строки Сенчи,
+    что бы вы могли создавать новые приложения из шаблона. Проверьте как прошла установка, в коммандной строке
+    перейдите в каталог Сенчи и выполните комманду сенчи. Например:
+    <pre>
+        $ cd ~/webroot/sencha-touch-2.0.0-gpl/
+        $ sencha
+        Sencha Command v2.0.0 for Sencha Touch 2
+        Copyright (c) 2012 Sencha Inc.
+        ...
+    </pre>
+    <b>Примечание:</b> Вы должны находитсявнутри каталога SDK или в каталоге сгенерированного проектаа.
+</div>
+
+<h2>Генерация вашего первого проекта</h2>
+<div>
+    Ну что ж, у вас есть установленные Sencha Touch и SDK Tool, давайте сгенерируем приложение.
+    Убедитесь, что вы по-прежнему в папке Сенча Touch SDK и введите следующее:
+    <pre>
+        $ sencha generate app GS ../GS
+        [INFO] Created file /Users/nickpoulden/Projects/sencha/GS/.senchasdk
+        [INFO] Created file /Users/nickpoulden/Projects/sencha/GS/index.html
+        [INFO] Created file /Users/nickpoulden/Projects/sencha/GS/app.js
+        ...
+    </pre>
+</div>
+
+<div>
+    Так сгенерируется скелет приложения с именным пространством <i>GS</i>(сокращенно от Getting Started)
+    и директорию <i>../GS</i>(на один уровень выше директории Sencha Touch SDK). Скилет приложения
+    содержит все необходимые файлы Touch приложения, включая index.html, копию Touch SDK, CSS, картинок
+    и конфигурационных файлов для упаковки вашего приложения в нативный код.
+</div>
+<div>
+    Дававайте проверим все ли успешно сгенерировалос, откроем приложение в браузере. Если предположить,
+    что SDK был распаковон в корневую папку(webroot), вы должны открыть страницу http://localhost/GS 
+    и увидеть: <br />
+    <img src="http://docs.sencha.com/touch/2-0/guides/getting_started/screen1.png" align="center"><br />
+</div>    
+    
+<h2>Изучим код</h2>    
+<div>Откроем директорию GS</div>
+
+    
+
